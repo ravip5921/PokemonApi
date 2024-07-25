@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        from fastapi.staticfiles import StaticFiles
+        <title>Pokémon API</title>
+        <link rel="stylesheet" href="/static/styles.css">
+        <script src="/static/fetchPokemons.js" defer></script>
+        
+    </head>
+    <body>
+        <div class="sticky">
+            Developed By Ravi
+        </div>
+        <h1>Welcome to Pokémon API!</h1>
+        
+        <form id="filter-form">
+            <label for="name">Filter by Name:</label>
+            <input type="text" id="name" name="name">
+            <br><br>
+            <label for="type">Filter by Type:</label>
+            <input type="text" id="type" name="type">
+            <br><br>
+            <button type="button" onclick="fetchPokemonsFilter()">Filter Pokemons</button>
+        </form>
+        <br>
+        <button id="getAllPokemons" type="button" onclick="fetchPokemons()">Get All Pokemons</button>
+        <div id="pokemon-list"></div>
+    </body>
+</html>

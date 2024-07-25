@@ -1,0 +1,4 @@
+httpx
+asyncpg
+sqlalchemy
+python-dotenv
